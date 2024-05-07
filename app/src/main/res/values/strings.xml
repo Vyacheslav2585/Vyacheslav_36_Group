@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="ButtonString">Sing In</string>
+    <string name="Forgot"><u>Forgot password</u></string>
+</resources>
