@@ -15,14 +15,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:text="Welcome!"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0
+        app:layout_constraintVertical_bias="0"
+        android:fontFamily="@font/my_font"
+        />
 
-" />
+
 
     <ImageView
         android:id="@+id/imageView7"
@@ -38,6 +41,9 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:autofillHints="creditCardExpirationDate"
+        android:inputType="text"
+        android:textColor="@color/black"
         android:id="@+id/editText"
         android:layout_width="336dp"
         android:layout_height="50dp"
@@ -51,15 +57,18 @@
         android:layout_marginTop="21dp"
         android:padding="11dp"
         android:textColorHint="@color/black"
-        android:hint="Email"/>
+        android:hint="Email"
+        android:fontFamily="@font/my_font"/>
 
     <EditText
+        android:fontFamily="@font/my_font"
         android:id="@+id/editText6"
         android:layout_width="336dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_input"
         android:hint="password"
         android:inputType="text"
+        android:textColor="@color/black"
         android:paddingHorizontal="11dp"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,27 +99,35 @@
             android:layout_height="16dp"
             android:layout_gravity="bottom"
             android:layout_marginBottom="0.5dp"
-            android:background="@drawable/custom_cheackbox" />
+            android:background="@drawable/custom_cheackbox"
+
+           />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="Keep me signed in"
-            android:textColorHint="@color/black"
-            android:textSize="14dp"/>
+            android:autofillHints="creditCardExpirationDate"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/my_font"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
             android:text="@string/Forgot"
-            android:textColorHint="@color/black"
-            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/my_font"
+            android:autofillHints="creditCardExpirationDate"
             />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:fontFamily="@font/my_font"
         android:layout_width="336dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_button"
